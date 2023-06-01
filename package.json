@@ -2,15 +2,15 @@
   "name": "base",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
     "build:dev": "ng build --configuration=development",
     "build:pro": "ng build --configuration=production",
+    "build": "ng build",
+    "ng:serve:dev": "ng serve --cconfiguration=development -o",
     "ng:serve:pro": "ng serve --cconfiguration=production -o",
-    "ng:serve:dev": "ng serve --cconfiguration=development -o"
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test",
+    "watch": "ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {
