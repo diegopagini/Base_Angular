@@ -13,7 +13,10 @@
         },
         "@schematics/angular:application": {
           "strict": true
-        }
+        },
+        "@schematics/angular:pipe": {
+					"standalone": true
+				}
       },
       "root": "",
       "sourceRoot": "src",
