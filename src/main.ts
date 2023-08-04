@@ -10,7 +10,7 @@ import { provideRouter, withRouterConfig } from '@angular/router';
 
 import { AppComponent } from './app/app.component';
 import { HttpInterceptor, JwtInterceptor } from './app/core/interceptors';
-import { routes } from './app/routes';
+import { routes } from './app/router/routes';
 
 bootstrapApplication(AppComponent, {
   providers: [
