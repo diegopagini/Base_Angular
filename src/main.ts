@@ -1,5 +1,4 @@
 import {
-  HTTP_INTERCEPTORS,
   provideHttpClient,
   withInterceptorsFromDi,
 } from '@angular/common/http';
@@ -9,7 +8,6 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideRouter, withRouterConfig } from '@angular/router';
 
 import { AppComponent } from './app/app.component';
-import { HttpInterceptor, JwtInterceptor } from './app/core/interceptors';
 import { routes } from './app/router/routes';
 
 bootstrapApplication(AppComponent, {
@@ -24,15 +22,5 @@ bootstrapApplication(AppComponent, {
     provideAnimations(),
     provideHttpClient(withInterceptorsFromDi()),
     // Interceptors
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: HttpInterceptor,
-      multi: true,
-    },
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: JwtInterceptor,
-      multi: true,
-    },
   ],
 }).catch((err) => console.error(err));
