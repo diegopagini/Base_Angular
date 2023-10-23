@@ -2,3 +2,25 @@ $tiny-mobile: 420px;
 $mobile: 720px;
 $desktop: 992px;
 $max-width: 1440px;
+
+@mixin tinyMobile {
+  @media (width <= $tiny-mobile) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (width <= $desktop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (width >= $desktop) {
+    @content;
+  }
+}
+
+@mixin maxWidth {
+  max-width: $max-width;
+}

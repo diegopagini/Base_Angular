@@ -6,7 +6,11 @@ import {
 import { importProvidersFrom } from '@angular/core';
 import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { provideRouter, withRouterConfig } from '@angular/router';
+import {
+  provideRouter,
+  withComponentInputBinding,
+  withRouterConfig,
+} from '@angular/router';
 
 import { AppComponent } from './app/app.component';
 import { HttpInterceptor, JwtInterceptor } from './app/core/interceptors';
@@ -19,7 +23,8 @@ bootstrapApplication(AppComponent, {
       routes,
       withRouterConfig({
         paramsInheritanceStrategy: 'always',
-      })
+      }),
+      withComponentInputBinding() // To use by @Input() the ID in routes like: product/:id
     ),
     provideAnimations(),
     provideHttpClient(withInterceptorsFromDi()),

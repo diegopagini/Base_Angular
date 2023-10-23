@@ -1,6 +1,15 @@
 {
   "name": "base",
   "version": "0.0.0",
+  "author": {
+    "name": "Diego Pagini",
+    "email": "diegopaginidev@gmai.com"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
+  ],
   "scripts": {
     "build:dev": "ng build --configuration=development",
     "build:pro": "ng build --configuration=production",
@@ -14,30 +23,30 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~16.1.8",
-    "@angular/common": "~16.1.8",
-    "@angular/compiler": "~16.1.8",
-    "@angular/core": "~16.1.8",
-    "@angular/forms": "~16.1.8",
-    "@angular/platform-browser": "~16.1.8",
-    "@angular/platform-browser-dynamic": "~16.1.8",
-    "@angular/router": "~16.1.8",
+    "@angular/animations": "~16.2.10",
+    "@angular/common": "~16.2.10",
+    "@angular/compiler": "~16.2.10",
+    "@angular/core": "~16.2.10",
+    "@angular/forms": "~16.2.10",
+    "@angular/platform-browser": "~16.2.10",
+    "@angular/platform-browser-dynamic": "~16.2.10",
+    "@angular/router": "~16.2.10",
     "@auth0/angular-jwt": "~5.1.2",
     "rxjs": "~7.8.1",
-    "tslib": "~2.6.1",
-    "zone.js": "~0.13.1"
+    "tslib": "~2.6.2",
+    "zone.js": "~0.14.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~16.1.7",
-    "@angular/cli": "~16.1.7",
-    "@angular/compiler-cli": "~16.1.8",
-    "@types/jasmine": "~4.3.5",
-    "jasmine-core": "~5.1.0",
+    "@angular-devkit/build-angular": "~16.2.7",
+    "@angular/cli": "~16.2.7",
+    "@angular/compiler-cli": "~16.2.10",
+    "@types/jasmine": "~5.1.1",
+    "jasmine-core": "~5.1.1",
     "karma": "~6.4.2",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.1.6"
+    "typescript": "~5.2.2"
   }
 }
